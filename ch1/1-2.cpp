@@ -27,11 +27,6 @@ int main(){
 	char ch1 = 'A', ch2 = 'Z';
 	swap(&ch1, &ch2);
 	cout << ch1 << ' ' << ch2 << endl;
-	/*
-	double dbl1 = 1.111, dbl2 = 5.555;
-	swap(%dbl1, %dbl2);
-	cout << dbl1 << ' '<<dbl2 << endl;
-	*/
 	
 	return 0;
 }
