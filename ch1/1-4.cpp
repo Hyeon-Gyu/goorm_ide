@@ -8,8 +8,10 @@ inline int SQURE(int x){
 }  // 컴파일러가 처리
 
 */
+
+
 //namespace
-namespace functioning1{
+/*namespace functioning1{
 	void func();
 }
 
@@ -34,4 +36,13 @@ void functioning1::func(){
 
 void functioning2::func(){
 	cout << "functioning2함수" << endl;
-}
+} */
+
+
+
+/*함수 선언 부분을 헤더파일에 작성
+  함수 정의 하는 부분만 소스파일1에 작성
+  main 함수 부분만 소스파일2에 작성*/
+
+
+
