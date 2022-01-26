@@ -31,6 +31,5 @@ int main(){
 	else{
 		cout << "different" << endl;
 	}
-	
-	return 0;
+
 }
