@@ -26,10 +26,10 @@ class Police{
 			else
 				pistol = NULL;
 		}
-		Police(const Police& rhs){
+		Police(const Police& rhs): handcuffs(rhs.handcuffs), pistol(rhs.pistol){
 			cout <<"복사생성자 사용" << endl;
-			this -> handcuffs = rhs.handcuffs;
-			this -> pistol = rhs.pistol;			
+			//handcuffs = rhs.handcuffs;
+			//pistol = rhs.pistol;			
 		}
 		void PutHandCuff(){
 			cout << "SNAP" << endl;
@@ -64,9 +64,9 @@ Police::Police(const Police& rhs){ // 복사생성자
 int main(){
 	Police officer(10,5);
 	Police man(0,0);
-	Police man2(0,0);
-	man = officer;
 	
-	officer(man2);
+	man = officer; // 대입연산자 사용
+	
+	Police officier2(officer); //복사생성자 사용
 	
 }
